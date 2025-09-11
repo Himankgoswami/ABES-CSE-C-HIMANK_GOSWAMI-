@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    <p  id = "demo1"></p>
+
+
+
+<script>
+
+    var a = 10 ;    
+    var b = 20 ;
+
+    add(a,b) ;  
+    sub(a,b) ;
+
+    function sub( a , b ){
+        document.getElementById("demo1").innerHTML = a - b ;
+    }
+
+    function add( a , b ){
+        document.getElementById("demo").innerHTML = a + b ;
+    }
+    
+</script>
+
+
+</body>
+</html>
