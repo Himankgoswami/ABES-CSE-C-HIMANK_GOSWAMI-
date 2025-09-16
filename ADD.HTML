@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .adi{
+            margin-top: 50px;
+            margin-left: 50px;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
 </head>
-<body>
+<body id = "adi">
     <p id = "demo"></p>
     <p  id = "demo1"></p>
 
+
+    <div class="adi" >
+        <button  onclick="ad()">click</button>
+        <div id="aaa"></div>
+    </div>
+
+
+    <button onclick = "red()">green</button>
+    <button onclick =  "green()">red</button>
+    <button onclick = "blue()">blue</button>
 
 
 <script>
@@ -26,7 +47,20 @@
     function add( a , b ){
         document.getElementById("demo").innerHTML = a + b ;
     }
-    
+
+    function ad() {
+        document.getElementById("aaa").innerHTML ="<h2>HELLO</h2>" ;
+    }
+
+    function green() {
+        document.getElementById("adi").style.backgroundColor = "green" ;
+    }
+    function red() {
+        document.getElementById("adi").style.backgroundColor = "red" ;
+    }
+    function blue() {
+        document.getElementById("adi").style.backgroundColor = "blue" ;
+    }
 </script>
 
 

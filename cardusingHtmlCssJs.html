@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cardusingHtmlCssJs.css">
+</head>
+<body>
+    
+    <div id="main">
+        <div class="card">
+            
+            <div class="part-1">
+                <img src = "logoimageforcard.webp">
+                <h3>counter app</h1>
+            </div>
+            
+            
+
+            <div class="buttons">
+                <button onclick="inc()">
+                    ++
+                </button>
+                
+                <input id = "inputfield" type="text" value="0"  >
+
+                <button onclick = "dec()">
+                    --
+                </button>
+            </div>
+            
+           
+        </div>
+    </div>
+
+    <script>
+        function inc() {
+         document.getElementById("inputfield").innerHTML =          document.getElementById("inputfield").value++ ; 
+         let v = document.getElementById("inputfield").value ; 
+         if(v>10) {
+            alert("danger")
+         }
+        }
+
+
+        function dec() {
+         document.getElementById("inputfield").innerHTML =          document.getElementById("inputfield").value-- ; 
+         let va = document.getElementById("inputfield").value ; 
+         if(va<0) {
+            alert("not allowed")
+         }
+        }
+    </script>
+
+</body>
+</html>

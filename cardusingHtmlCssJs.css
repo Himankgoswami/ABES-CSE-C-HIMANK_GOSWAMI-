@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.card {
+    border: 2px solid red  ; 
+    
+    margin-top: 50px ; 
+    width:45vw;
+    height: 20vh;
+    position: relative;
+    border-radius: 15px;
+}
+.card img{
+    height: 25px;
+    width: 25px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left:0; 
+}
+.part-1{
+    display:flex; 
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+div h3 {
+    position : relative; 
+    left: 50px
+}
+
+.buttons {
+    position : relative ; 
+    left: 50%; 
+    top : 10px; 
+}
+
+.input-field {
+
+    position : relative ; 
+    left : 15px ;
+    top : 10px ;  
+
+}
+
+input{
+    cursor:  not-allowed;
+}
