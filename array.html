@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students</title>
+  <style>
+    .student-box {
+      padding: 6px;
+      margin: 4px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: fit-content;
+      background: #f9f9f9;
+    }
+    h3 {
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div id="samedata"></div>
+    <div id="differentdata"></div>
+  </div>
+
+  <script>
+    const students = [
+      { firstname: "mohan",  lastname: "sharma", studentclass: "IT" },
+      { firstname: "rohan",  lastname: "sharma", studentclass: "IT" },
+      { firstname: "john",   lastname: "sharma", studentclass: "IT" },
+      { firstname: "himank", lastname: "sharma", studentclass: "cs" },
+      { firstname: "lokesh", lastname: "sharma", studentclass: "cse" }
+    ];
+
+    const itStudents = students.filter(s => s.studentclass === "IT");
+    const nonitStudents = students.filter(s => s.studentclass !== "IT");
+
+    // Create HTML with divs
+    document.getElementById("samedata").innerHTML =
+      "<h3>IT Students</h3>" +
+      itStudents.map(s => `<div class="student-box">${s.firstname} ${s.lastname} (${s.studentclass})</div>`).join("");
+
+    document.getElementById("differentdata").innerHTML =
+      "<h3>Non-IT Students</h3>" +
+      nonitStudents.map(s => `<div class="student-box">${s.firstname} ${s.lastname} (${s.studentclass})</div>`).join("");
+  </script>
+</body>
+</html>
