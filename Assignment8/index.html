@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Example</title>
+    <style>
+        .card{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h3>Your Name</h3> 
+    <input type="text" id="adi"> 
+    
+    <h3>Know Language</h3>
+    <input type="text" id="a"> <br>
+    <input type="text" id="b"> <br>
+    <input type="text" id="c"> 
+
+    <br><br>
+    <button onclick="abes()">CLICK</button>
+
+
+    <div class="card">
+
+    </div>
+    <script>
+        function abes() {
+            let name = document.getElementById("adi").value;
+            let lang1 = document.getElementById("a").value;
+            let lang2 = document.getElementById("b").value;
+            let lang3 = document.getElementById("c").value;
+
+            
+            document.getElementsByClassName("card").write(`
+                <h1>Name is ${name}</h1>
+                <h2>Known Languages:</h2>
+                <ul>
+                    <li>${lang1}</li>
+                    <li>${lang2}</li>
+                    <li>${lang3}</li>
+                </ul>
+            `);
+        }
+    </script>
+</body>
+</html>

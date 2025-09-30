@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../CSE C WEB MERN STACK  NEW GIT"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "javascript"
+	}
+}
